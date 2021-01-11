@@ -41,7 +41,7 @@ public class NasaViewHolder extends RecyclerView.ViewHolder {
         photoInfo = answer;
         title.setText(answer.getTitle());
         date.setText(answer.getDate());
-        Picasso.get().load(answer.getUrl()).into(img);
+        Picasso.get().load(answer.getUrl()).placeholder(R.drawable.progress_animation).into(img);
     }
 
     public void clear() {
